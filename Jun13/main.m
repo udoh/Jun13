@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
               bounds.size.width, bounds.size.height);
         
 
+        // enums
         enum colors {
             red,
             green,
@@ -53,13 +54,17 @@ int main(int argc, char *argv[])
         enum colors color = green;
         NSLog(@"The value for green is stored as %d", color);
         
+
+        // NSUInterger
         NSUInteger uBiggest = 4294967295;
         NSLog(@"The maximum value for an NSUInteger type is %u", (unsigned int)uBiggest);
         
+        // BOOL
         BOOL myDecision = YES;
         myDecision = !myDecision;
         NSLog(@"The value of myDecision is %d", myDecision);
         
+        // Pointers
         int j = 10;
         int *pointerToJ = &j;
         NSLog(@"The address of the variable j is %p", pointerToJ);
